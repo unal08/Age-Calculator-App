@@ -1,0 +1,164 @@
+@font-face {
+    font-family: PoppinsBoldItalic;
+    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: PoppinsRegular;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+:root {
+    --primary-purple: hsl(259, 100%, 65%);
+    --primary-light-red: hsl(0, 100%, 67%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-offwhite: hsl(0, 0%, 94%);
+    --neutral-lightgrey: hsl(0, 0%, 86%);
+    --neutral-smokeygray: hsl(0, 1%, 44%);
+    --neutral-offblack: hsl(0, 0%, 8%);
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: PoppinsRegular;
+    background-color: var(--neutral-lightgrey);
+}
+
+
+
+body .container {
+    width: 80%;
+    margin: auto;
+    padding: 5rem 0;
+    height: 100vh;
+}
+
+form>.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--neutral-white);
+    border-radius: 1rem;
+    border-bottom-right-radius: 26.3%;
+    box-shadow: 0 0 100px 0 var(--neutral-offwhite);
+    width: 491px;
+    margin: auto;
+}
+
+.upform{ 
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2.5rem;
+    min-width: 352px;
+}
+
+
+.upform .lab label{
+    font-size: 9px;
+    color: var(--neutral-smokeygray);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+.upform .lab{ 
+    flex-basis: 120px;
+}
+
+
+
+.upform .lab input{
+    height: 50px;
+    font-size: 20px;    
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 1px solid var(--neutral-lightgrey);
+    padding-left: 1rem;
+    font-family: PoppinsBold;
+}
+
+
+input:focus {
+    outline-color: var(--primary-purple) !important;
+
+}
+
+
+.midform {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.midform span{
+    height: .1rem;
+    width: 90%;
+    background-color: var(--neutral-offwhite);
+}
+
+.midform button{
+    background-color: var(--primary-purple);
+    padding: 15.6px;
+    border-radius: 50%;
+    border: none;
+    cursor: url(./assets/images/hand-pointer-icon.svg),auto;
+}
+
+.midform button:hover{
+    background-color: var(--neutral-offblack);
+}
+
+.midform img{
+    width: 33.3px;
+    aspect-ratio: 1;
+}
+
+
+
+  
+
+
+input::placeholder{
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: var(--neutral-smokeygray);
+}
+
+.lowform{
+    font-size: 60.5px;
+    font-weight: 900;
+    font-family: PoppinsBoldItalic !important;
+    
+}
+
+.lowform span{
+    color: var(--primary-purple);
+    letter-spacing: 0.5rem;
+}
+
+.lowform>p{
+    color: var(--neutral-offblack);
+    letter-spacing: 0;
+}
+
+@media(max-width: 375px) {
+    body{
+        min-width: 612.6px;
+    }
+}
